@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Книжкові набори — ідеальний подарунок</title>
+  <meta name="description" content="Набори з 1 або 2 книгами, аксесуарами та блокнотом. Оберіть свій формат і замовляйте онлайн." />
+  <meta property="og:title" content="Книжкові набори — ідеальний подарунок" />
+  <meta property="og:description" content="Набори: 1 книга або 2 книги, аксесуари + блокнот. Розміри M і L." />
+  <meta name="color-scheme" content="light" />
+<link rel="stylesheet" href="styles.css" /> 
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap&subset=cyrillic" rel="stylesheet">
+
+</head>
+<body>
+  <a href="#main" class="skip-link">Перейти до основного контенту</a>
+
+  <header>
+   <div class="container nav" role="navigation" aria-label="Головна навігація">
+<div class="brand">
+<img src="images/logo.svg" alt="Логотип" class="brand-logo" />
+<span>Книжкові набори</span>
+</div>
+<!-- Desktop menu -->
+<nav class="menu" aria-label="Меню розділів">
+<a href="#sets">Набори</a>
+<a href="#gallery">Галерея</a>
+<a href="#reviews">Відгуки</a>
+<a href="#order">Замовлення</a>
+</nav>
+<!-- Mobile burger -->
+<details class="burger" role="list" aria-label="Мобільне меню">
+<summary aria-controls="burger-menu">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+Меню
+</summary>
+<div id="burger-menu" class="burger-menu">
+<a href="#sets" onclick="this.closest('details').removeAttribute('open')">Набори</a>
+<a href="#gallery" onclick="this.closest('details').removeAttribute('open')">Галерея</a>
+<a href="#reviews" onclick="this.closest('details').removeAttribute('open')">Відгуки</a>
+<a href="#order" onclick="this.closest('details').removeAttribute('open')">Замовлення</a>
+</div>
+</details>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+  <div class="container hero-inner">
+    <!-- Текстова частина -->
+    <div class="hero-copy">
+      <h1>Твій ідеальний книжковий набір</h1>
+
+      <p class="lead">Обирай з наборів із 1 або 2 книгами чи комплекту з книжковими аксесуарами та блокнотом. Чудовий подарунок для себе та близьких.</p>
+
+      <!-- ЦІНА -->
+<div class="price" aria-label="Ціна по акції від 800 грн">
+  <span class="price-old" aria-hidden="true">від 1000 грн</span>
+  <div class="price-new-wrap">
+    <span class="price-badge">Акція</span>
+    <span class="price-new">від 800 грн</span>
+  </div>
+</div>
+
+
+      <div class="cta">
+        <a class="btn btn-primary" href="#sets" aria-label="Перейти до вибору наборів">Обрати набір</a>
+        <a class="btn" href="#order">Замовити зараз</a>
+      </div>
+    </div>
+
+    <!-- Фото -->
+    <div class="hero-art">
+      <img src="images/osnova.png" alt="Hero image" loading="eager" decoding="async">
+    </div>
+  </div>
+   <div class="hero-ticker" aria-label="Переваги та пропозиції">
+    <div class="ticker-track">
+      <span>Великий вибір аксесуарів</span>
+      <span>Найкращі подарунки для близьких</span>
+      <span>Естетичні блокноти</span>
+      <span>Комплектуй свої ідеальні набори</span>
+      <span>Швидка відправка</span>
+      <!-- дублюємо для безшовного скролу -->
+      <span>Великий вибір аксесуарів</span>
+      <span>Найкращі подарунки для близьких</span>
+      <span>Естетичні блокноти</span>
+      <span>Комплектуй свої ідеальні набори</span>
+      <span>Швидка відправка</span>
+         <span>Великий вибір аксесуарів</span>
+      <span>Найкращі подарунки для близьких</span>
+      <span>Естетичні блокноти</span>
+      <span>Комплектуй свої ідеальні набори</span>
+      <span>Швидка відправка</span>
+    </div>
+  </div>
+</section>
+
+
+
+    <section class="features">
+      <div class="container">
+        <div class="feature-grid">
+          <article class="feature" aria-label="Натхненні книжки">
+             <img src="images/icon1.png" alt="Логотип" class="brand-logo1" />
+            <h3>Натхненні книжки</h3>
+            <p class="muted">Підібрані видання на будь-який смак.</p>
+          </article>
+          <article class="feature" aria-label="Затишні аксесуари">
+             <img src="images/icon2.png" alt="Логотип" class="brand-logo1" />
+            <h3>Затишні аксесуари</h3>
+            <p class="muted">Стрічки, закладки, стікери та інше.</p>
+          </article>
+          <article class="feature" aria-label="Стильні блокноти">
+            <img src="images/icon3.png" alt="Логотип" class="brand-logo1" />
+            <h3>Стильні блокноти</h3>
+            <p class="muted">Для важливих ідей і нотаток.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sets" class="pricing">
+      <div class="container">
+        <h2 class="section-title">Варіанти наборів та ціни</h2>
+        <p class="sub">Оберіть розмір і комплектацію, що підходить саме вам.</p>
+
+        <h3>Набори з 1 книгою</h3>
+        <div class="cards" role="list">
+          <article class="card" role="listitem">
+            <span class="badge">Розмір M</span>
+            <p class="price">800 грн</p>
+            <ul class="includes">
+              <li>1 книга (дешевша)</li>
+              <li>10 книжкових аксесуарів</li>
+            </ul>
+            <a class="btn btn-primary" href="#order">Замовити M</a>
+          </article>
+          <article class="card" role="listitem">
+            <span class="badge">Розмір L</span>
+            <p class="price">1000 грн</p>
+            <ul class="includes">
+              <li>1 книга (дорожча)</li>
+              <li>15 книжкових аксесуарів</li>
+            </ul>
+            <a class="btn btn-primary" href="#order">Замовити L</a>
+          </article>
+        </div>
+
+        <h3 style="margin-top:26px">Набори з 2 книгами</h3>
+        <div class="cards" role="list">
+          <article class="card" role="listitem">
+            <span class="badge">Розмір M</span>
+            <p class="price">1500 грн</p>
+            <ul class="includes">
+              <li>2 книги</li>
+              <li>Аксесуари у комплекті</li>
+            </ul>
+            <a class="btn btn-primary" href="#order">Замовити M</a>
+          </article>
+          <article class="card" role="listitem">
+            <span class="badge">Розмір L</span>
+            <p class="price">1800 грн</p>
+            <ul class="includes">
+              <li>2 книги</li>
+              <li>Аксесуари у комплекті</li>
+            </ul>
+            <a class="btn btn-primary" href="#order">Замовити L</a>
+          </article>
+        </div>
+
+        <h3 style="margin-top:26px">Книжкові аксесуари + блокнот</h3>
+        <div class="cards" role="list">
+          <article class="card" role="listitem">
+            <span class="badge">Розмір M</span>
+            <p class="price">600 грн</p>
+            <ul class="includes">
+              <li>10 книжкових аксесуарів</li>
+              <li>Блокнот</li>
+            </ul>
+            <a class="btn btn-primary" href="#order">Замовити M</a>
+          </article>
+          <article class="card" role="listitem">
+            <span class="badge">Розмір L</span>
+            <p class="price">800 грн</p>
+            <ul class="includes">
+              <li>20 книжкових аксесуарів</li>
+              <li>Блокнот</li>
+            </ul>
+            <a class="btn btn-primary" href="#order">Замовити L</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" aria-label="Галерея фотографій">
+      <div class="container">
+        <h2 class="section-title">Фото / галерея</h2>
+        <div class="gallery">
+          <div class="ph" role="img" aria-label="Фото набору 1"></div>
+          <div class="ph" role="img" aria-label="Фото набору 2"></div>
+          <div class="ph" role="img" aria-label="Фото набору 3"></div>
+          <div class="ph" role="img" aria-label="Фото набору 4"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" aria-label="Відгуки покупців">
+      <div class="container">
+        <h2 class="section-title">Відгуки покупців</h2>
+        <div class="testi">
+          <blockquote class="quote">"Найкращий подарунок для книголюбів! Оформлення — бомба."<b>— Марія</b></blockquote>
+          <blockquote class="quote">"Швидка доставка і приємні дрібнички в наборі."<b>— Андрій</b></blockquote>
+          <blockquote class="quote">"Замовляю вже вдруге. Якість супер!"<b>— Олена</b></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="order" aria-label="Форма замовлення">
+      <div class="container">
+        <h2 class="section-title">Замовити набір</h2>
+        <p class="sub">Заповніть форму — ми зв'яжемося з вами для підтвердження. (Підключіть свій обробник форм або замініть посилання на месенджер)</p>
+        <form action="#" method="post">
+          <label for="pack">Набір</label>
+  <!-- КАСТОМНИЙ SELECT -->
+<div class="select-wrap" data-select="pack">
+  <!-- Нативний select: лишається для форми, але прихований -->
+  <select id="pack" name="Набір" required class="native-select" tabindex="-1" aria-hidden="true">
+    <option value="" disabled selected>Оберіть набір</option>
+    <option value="1book-m">1 книга — M (800 грн)</option>
+    <option value="1book-l">1 книга — L (1000 грн)</option>
+    <option value="2books-m">2 книги — M (1500 грн)</option>
+    <option value="2books-l">2 книги — L (1800 грн)</option>
+    <option value="acc-m">Аксесуари + блокнот — M (600 грн)</option>
+    <option value="acc-l">Аксесуари + блокнот — L (800 грн)</option>
+  </select>
+
+  <!-- Кнопка-триггер (видимий елемент) -->
+  <button type="button"
+          class="select-trigger"
+          id="packTrigger"
+          aria-haspopup="listbox"
+          aria-expanded="false">
+    Оберіть набір
+    <svg viewBox="0 0 24 24" class="chevron" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg>
+  </button>
+
+  <!-- Випадаючий список -->
+  <ul class="select-menu" id="packMenu" role="listbox" aria-labelledby="packTrigger">
+    <li role="option" data-value="1book-m" tabindex="-1">1 книга — M (800 грн)</li>
+    <li role="option" data-value="1book-l" tabindex="-1">1 книга — L (1000 грн)</li>
+    <li role="option" data-value="2books-m" tabindex="-1">2 книги — M (1500 грн)</li>
+    <li role="option" data-value="2books-l" tabindex="-1">2 книги — L (1800 грн)</li>
+    <li role="option" data-value="acc-m" tabindex="-1">Аксесуари + блокнот — M (600 грн)</li>
+    <li role="option" data-value="acc-l" tabindex="-1">Аксесуари + блокнот — L (800 грн)</li>
+  </ul>
+</div>
+
+
+          <label for="name">Ім'я</label>
+          <input id="name" name="Ім'я" required />
+
+          <label for="phone">Телефон або Telegram</label>
+          <input id="phone" name="Контакт" placeholder="@username або +38…" required />
+
+          <label for="note">Коментар</label>
+          <textarea id="note" name="Коментар" placeholder="Колір блокнота, уподобання щодо книг тощо"></textarea>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Надіслати заявку</button>
+            <a class="btn" href="https://t.me/yourshop" target="_blank" rel="noopener">Написати в Telegram</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="nav" style="justify-content:space-between; gap:8px;">
+        <small>© <span id="y">2025</span> Книжкові набори</small>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="#">Доставка і оплата</a>
+          <a href="#">Політика конфіденційності</a>
+          <a href="mailto:your_email@example.com">your_email@example.com</a>
+        </div>
+      </div>
+      <p class="fine">Порада: замініть заповнювачі зображень та посилання на власні.</p>
+    </div>
+  </footer>
+</body>
+<script>
+(function(){
+  const wrap    = document.querySelector('.select-wrap[data-select="pack"]');
+  const native  = wrap.querySelector('.native-select');
+  const trigger = wrap.querySelector('.select-trigger');
+  const menu    = wrap.querySelector('.select-menu');
+  const items   = Array.from(menu.querySelectorAll('[role="option"]'));
+
+  function openMenu(){
+    menu.dataset.open = "true";
+    trigger.setAttribute('aria-expanded','true');
+  }
+  function closeMenu(){
+    menu.dataset.open = "false";
+    trigger.setAttribute('aria-expanded','false');
+  }
+  function toggleMenu(){ menu.dataset.open === "true" ? closeMenu() : openMenu(); }
+
+  function setValue(value, label){
+    native.value = value;                         // запис у прихований <select>
+    trigger.firstChild.nodeValue = label;         // оновити текст на кнопці
+    items.forEach(el => el.removeAttribute('aria-selected'));
+    const current = items.find(el => el.dataset.value === value);
+    if(current) current.setAttribute('aria-selected','true');
+    native.dispatchEvent(new Event('change', {bubbles:true}));
+    closeMenu();
+  }
+
+  // відкриття/закриття
+  trigger.addEventListener('click', toggleMenu);
+
+  // вибір кліком
+  items.forEach(li => {
+    li.addEventListener('click', () => setValue(li.dataset.value, li.textContent.trim()));
+    li.addEventListener('keydown', (e)=>{
+      if(e.key === 'Enter'){ e.preventDefault(); setValue(li.dataset.value, li.textContent.trim()); }
+    });
+  });
+
+  // клавіатурна навігаціяі
+  trigger.addEventListener('keydown', (e)=>{
+    if(e.key === 'ArrowDown'){ e.preventDefault(); openMenu(); (items[0]||trigger).focus(); }
+  });
+  menu.addEventListener('keydown', (e)=>{
+    const i = items.indexOf(document.activeElement);
+    if(e.key === 'Escape'){ closeMenu(); trigger.focus(); }
+    if(e.key === 'ArrowDown'){ e.preventDefault(); (items[i+1]||items[0]).focus(); }
+    if(e.key === 'ArrowUp'){ e.preventDefault(); (items[i-1]||items[items.length-1]).focus(); }
+  });
+
+  // клік поза меню
+  document.addEventListener('click', (e)=>{
+    if(!wrap.contains(e.target)) closeMenu();
+  });
+
+  // ініціалізація: якщо вже вибрано в нативному select
+  const initOpt = native.options[native.selectedIndex];
+  if(initOpt && initOpt.value){
+    trigger.firstChild.nodeValue = initOpt.textContent;
+    items.find(li => li.dataset.value === initOpt.value)?.setAttribute('aria-selected','true');
+  }
+})();
+</script>
+
+
+</html>
