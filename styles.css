@@ -16,8 +16,8 @@ h1, h2, h3, .btn, .price-new {
 
 
     :root{
-      --brand: #a78bfa;      /* pastel violet */
-      --brand-700: #8b5cf6;   /* violet */
+      --brand: #0097b2;      /* pastel violet */
+      --brand-700: #016f82;   /* violet */
       --ink: #374151;         /* slate-700 */
       --muted: #6b7280;       /* gray-500 */
       --card: #ffffffcc;      /* прозорий білий */
@@ -243,6 +243,16 @@ h1 {
   background: #f5f5f7;
   box-shadow: var(--shadow);
 }
+.card-img {
+  width: 85%; /* Зменшуємо ширину зображення */
+  height: auto;
+  margin: 0 auto 18px; /* Центруємо зображення */
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: block; /* Встановлюємо display:block для правильного вирівнювання */
+  object-position: center; /* Центрує зображення */
+}
+
 
 .hero-art img {
   width: 100%;
@@ -311,7 +321,7 @@ h1 {
 .select-wrap{
   position:relative;
   width:100%;
-  max-width:420px;
+
   font-family:"Nunito", system-ui, sans-serif;
 }
 
@@ -334,13 +344,13 @@ h1 {
   cursor:pointer;
 }
 .select-trigger:hover{
-  border-color:var(--brand, #7c3aed);
-  box-shadow:0 0 0 3px rgba(124,58,237,.15);
+  border-color:var(--brand, #0097b2);
+  box-shadow:0 0 0 3px rgba(0, 151, 178, 0.273);
 }
 .select-trigger:focus{
   outline:none;
-  border-color:var(--brand, #7c3aed);
-  box-shadow:0 0 0 3px rgba(124,58,237,.25);
+  border-color:var(--brand, #0097b2);
+  box-shadow:0 0 0 3px rgba(0, 151, 178, 0.273);
 }
 .chevron{
   width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:2;
@@ -379,9 +389,9 @@ h1 {
   color:#374151;
   outline:none;
 }
-.select-menu li:hover{ background:#f3e7e9; color:#111827; }
-.select-menu li[aria-selected="true"]{ background:var(--brand, #7c3aed); color:#fff; }
-.select-menu li:focus{ background:#efe9ff; }
+.select-menu li:hover{ background:#0097b2; color:#111827; }
+.select-menu li[aria-selected="true"]{ background:var(--brand, #0097b2); color:#fff; }
+.select-menu li:focus{ background:#0097b2; }
 
 
     /* --- Sections --- */
@@ -393,9 +403,22 @@ h1 {
     .section-title{ font-size: clamp(22px, 3.4vw, 32px); margin: 8px 0 16px; }
     .sub{ color:#6b7280; margin-top:-4px; margin-bottom: 16px; }
 
-    .cards{ display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:16px; }
-    .card{ background: var(--card); border-radius: var(--radius); padding:20px; box-shadow: var(--shadow); border: 1px solid #f3e8ff; display:flex; flex-direction:column; }
-    .badge{ align-self:flex-start; padding:6px 10px; border-radius:999px; background:#f5f3ff; color:#3730a3; font-weight:700; font-size:13px; }
+    .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Зменшено мінімальну ширину картки */
+  gap: 12px; /* Зменшено відстань між картками */
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 15px; /* Зменшено внутрішні відступи */
+  box-shadow: var(--shadow);
+  border: 1px solid #f3e8ff;
+  display: flex;
+  flex-direction: column;
+}
+ .badge{ align-self:flex-start; padding:6px 10px; border-radius:999px; background:#f5f3ff; color:#3730a3; font-weight:700; font-size:13px; }
     .price{ font-size: clamp(26px, 3.5vw, 36px); font-weight:800; margin: 10px 0; color: var(--ink); }
     .includes{ padding:0; margin:0 0 14px; list-style:none; }
     .includes li{ display:flex; gap:8px; align-items:flex-start; margin: 6px 0; }
@@ -409,7 +432,25 @@ h1 {
 
     form{ background: var(--card); padding:20px; border-radius: var(--radius); box-shadow: var(--shadow); border:1px solid #f3e8ff; }
     label{ font-weight:600; display:block; margin: 10px 0 6px; }
-    input, select, textarea{ width:100%; padding:12px 12px; border-radius:12px; border:1px solid #e5e7eb; background:#fff; font: inherit; }
+    /* Стилі для input та textarea */
+input, textarea {
+  width: 100%;
+  padding: 12px 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  font: inherit;
+  transition: all 0.2s ease; /* Додаємо плавність для ефектів */
+}
+
+/* Тіні та фіолетова обводка при наведенні */
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+  border-color: var(--brand, #0097b2); /* Фіолетова обводка */
+  box-shadow: 0 0 0 3px rgba(0, 151, 178, 0.273); /* Легка тінь при фокусі */
+  outline: none; /* Прибираємо стандартну обводку браузера */
+}
+
     textarea{ min-height: 120px; }
     .form-actions{ display:flex; gap:12px; flex-wrap:wrap; margin-top: 12px; }
 
